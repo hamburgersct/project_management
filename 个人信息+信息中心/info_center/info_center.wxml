@@ -1,0 +1,25 @@
+<view class="main">
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%"/>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view class="selected">
+        <view class="select-title"><text>信息汇总</text></view>
+        <view class="select-top">
+            <view class="select-top-small">
+                <navigator url="../hosp_list/hosp_list">
+                    <image src="/image/hosp_list.png"></image>
+                </navigator>
+            </view>
+            <view class="select-top-small">
+                <navigator url="../contact_list/contact_list">
+                    <image src="/image/contact.png"></image>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

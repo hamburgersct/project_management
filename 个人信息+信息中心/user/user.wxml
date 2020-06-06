@@ -1,0 +1,45 @@
+<view class="main">
+    <view class="header">
+        <image src="{{thumb}}" class="thumb"></image>
+        <text class="nickname">{{nickname}}</text>
+        <text class="about">关于我们</text>
+    </view>
+    <view class="address-box">
+        <view class="address-manage">
+            <navigator url="/page/component/address/address">用户信息绑定</navigator>
+        </view>
+    </view>
+    <view class="newest">
+        <view class="newest-title"><text>个人状态</text></view>
+        <view class="newest-box">
+            <view wx:if="{{hasAddress}}" class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/user_name.png"></image>
+                    <view class="newest-text"><text>学生</text></view>
+                    <view class="newest-text"><text>{{address.name}}</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/telephone.png"></image>
+                    <view class="newest-text"><text>电话</text></view>
+                     <view class="newest-text"><text>{{address.phone}}</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/graduation-cap.png"></image>
+                    <view class="newest-text"><text>学号</text></view>
+                     <view class="newest-text"><text>{{address.stuid}}</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/house.png"></image>
+                    <view class="newest-text"><text>详细住址</text></view>
+                     <view class="newest-text"><text>{{address.detail}}</text></view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

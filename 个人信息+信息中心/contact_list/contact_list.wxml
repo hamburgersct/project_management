@@ -1,0 +1,36 @@
+<view class="main">
+    <view class="banner">
+        <image src="/image/contact_details.jpg"></image>
+    </view>
+
+    <view class="list-box">
+        <view class="newest-list">
+            <navigator>
+                <image src="/image/takeout-box.png"></image>
+                <view class="newest-text"><text>食堂</text></view>
+                <view class="newest-text"><text>电话：10021</text></view>
+            </navigator>
+        </view>
+        <view class="newest-list">
+            <navigator>
+                <image src="/image/police_car.png"></image>
+                <view class="newest-text"><text>保卫处</text></view>
+                <view class="newest-text"><text>电话：110</text></view>
+            </navigator>
+        </view>
+        <view class="newest-list">
+            <navigator>
+                <image src="/image/staff-of-aesculapius.png"></image>
+                <view class="newest-text"><text>校医院</text></view>
+                <view class="newest-text"><text>电话：120</text></view>
+            </navigator>
+        </view>
+        <view class="newest-list">
+            <navigator>
+                <image src="/image/bar-of-soap.png"></image>
+                <view class="newest-text"><text>浴室</text></view>
+                <view class="newest-text"><text>电话：18020</text></view>
+            </navigator>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+<view class="main">
+    <view class="goods-box">
+        <image src="{{hospital.image}}" class="goods-thumb"></image>
+        
+        
+        <view class="goods-title">{{hospital.title}}</view>
+        <view class="goods-price">{{hospital.tel}}</view>
+    </view>
+    <view class="goods-tab-box">
+        <view class="goods-tab-nav {{curIndex === 0 ?'on':''}}" bindtap="bindTap" data-index="0">医院详情</view>
+        <view class="goods-tab-nav {{curIndex === 1 ?'on':''}}" bindtap="bindTap" data-index="1">医院位置</view>
+        <view class="goods-tab-nav {{curIndex === 2 ?'on':''}}" bindtap="bindTap" data-index="2">额外服务</view>
+        <view class="goods-content">
+            <view wx:if="{{curIndex === 0}}">{{hospital.detail}}</view>
+            <view wx:if="{{curIndex === 1}}">{{hospital.parameter}}</view>
+            <view wx:if="{{curIndex === 2}}">{{hospital.service}}</view>
+        </view>
+    </view>
+</view>

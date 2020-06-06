@@ -1,0 +1,29 @@
+<view class="main">
+    <view class="banner">
+        <image src="/image/hosp.jpg"></image>
+    </view>
+
+    <view class="list-box">
+        <view class="newest-list">
+            <navigator url="../hosp_details/hosp_details">
+                <image src="/image/hospital.png"></image>
+                <view class="newest-text"><text>第一人民医院</text></view>
+                <view class="newest-text"><text>XX区</text></view>
+            </navigator>
+        </view>
+        <view class="newest-list">
+            <navigator url="../hosp_details/hosp_details">
+                <image src="/image/hospital.png"></image>
+                <view class="newest-text"><text>第二人民医院</text></view>
+                <view class="newest-text"><text>XX区</text></view>
+            </navigator>
+        </view>
+        <view class="newest-list">
+            <navigator url="../hosp_details/hosp_details">
+                <image src="/image/hospital.png"></image>
+                <view class="newest-text"><text>第三人民医院</text></view>
+                <view class="newest-text"><text>XX区</text></view>
+            </navigator>
+        </view>
+    </view>
+</view>
